@@ -1,0 +1,3 @@
+GET / => homePage
+POST / => postPost
+GET /shit/: => whoa
