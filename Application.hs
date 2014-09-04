@@ -13,10 +13,6 @@ homePage _ respond = respond $
 postPost _ respond = respond $
   responseLBS status200 [("Content-Type", "text/plain")] "Posted!"
 
--- whoa :: Maybe T.Text -> Application
--- whoa Nothing _ respond = respond $
---   responseLBS status200 [("Content-Type", "application/json")] "{\"arg:\"\"Y U NO?\", \"hello\": 42}"
-
 whoa :: T.Text -> Application
 whoa arg _ respond 
   | arg == T.empty = respond $
