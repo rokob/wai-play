@@ -6,6 +6,6 @@ To run:
 * cabal install route-generator
 * make Routes.hs
 * cabal build
-* dist/build/wai-play/wai-play
+* `cabal run` or `dist/build/wai-play/wai-play`
 
 Then open a browser to http://localhost:3000 or cURL that shit
